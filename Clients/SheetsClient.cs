@@ -19,7 +19,7 @@ namespace FunctionalAreaCoverage.Clients
 
         private static UserCredential GetCredential()
         {
-            using (var stream = new FileStream("credentials.base64", FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream("Properties/credentials.base64", FileMode.Open, FileAccess.Read))
             using (var decoded = new CryptoStream(stream, new FromBase64Transform(), CryptoStreamMode.Read))
             {
                 // The file token.json stores the user's access and refresh tokens, and is created
