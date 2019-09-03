@@ -22,6 +22,8 @@ namespace FunctionalAreaCoverage.Helpers
             {
                 case "QB":
                 case "QE":
+                case "TC":
+                case "E2E":
                     return upper;
 
                 default:
